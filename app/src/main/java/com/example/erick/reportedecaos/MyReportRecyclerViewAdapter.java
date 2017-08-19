@@ -52,6 +52,9 @@ public class MyReportRecyclerViewAdapter extends
                 .load(report.imageUrl)
 //                    .placeholder(R.drawable.ic_photo_black_24dp)
                 .into(holder.reportImage);
+        Glide.with(context)
+                .load(report.user.photoUrl)
+                .into(holder.userImage);
     }
 
     @Override
