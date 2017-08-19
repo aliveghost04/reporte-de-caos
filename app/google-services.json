@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "878090392623",
+    "firebase_url": "https://chaosreport-7ecc2.firebaseio.com",
+    "project_id": "chaosreport-7ecc2",
+    "storage_bucket": "chaosreport-7ecc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878090392623:android:be80871637608185",
+        "android_client_info": {
+          "package_name": "com.example.erick.reportedecaos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878090392623-t66gpns3n2vu4baqcfkamjdaf25qbhj9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.erick.reportedecaos",
+            "certificate_hash": "9a07c0fe003146c617221b11f25d57b1983aeaa5"
+          }
+        },
+        {
+          "client_id": "878090392623-8bv0f3lckrg5do1oa2ab2bo165293ti6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwGby8VyqdUiqctsqoz-IHKY3nuEDoRzU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878090392623-8bv0f3lckrg5do1oa2ab2bo165293ti6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
