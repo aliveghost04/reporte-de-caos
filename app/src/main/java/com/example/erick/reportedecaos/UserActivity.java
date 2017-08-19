@@ -27,6 +27,7 @@ public class UserActivity extends AppCompatActivity {
     private Uri imageUri;
     private boolean emailChanged;
     private boolean passwordChanged;
+    private ImageView ivUser;
 
     private StorageReference storageReference;
     private FirebaseUser firebaseUser;
@@ -41,7 +42,7 @@ public class UserActivity extends AppCompatActivity {
         storageReference = FirebaseStorage.getInstance().getReference().child(MainActivity.USERS_CHILD);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        ImageView ivUser = (ImageView) findViewById(R.id.ivUser);
+        ivUser = (ImageView) findViewById(R.id.ivUser);
         EditText etName = (EditText) findViewById(R.id.etName);
         EditText etEmail = (EditText) findViewById(R.id.etEmail);
         EditText etPassword = (EditText) findViewById(R.id.etPassword);
@@ -163,6 +164,7 @@ public class UserActivity extends AppCompatActivity {
                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                     imageChanged = true;
                     imageUri = taskSnapshot.getDownloadUrl();
+                    Glide.with(UserActivity.this).load(imageUri).into(ivUser);
                 }
             });
         }
